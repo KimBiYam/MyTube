@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+html, body {width: 100%; height: 100%; }
+
+.nav { display: flex; position: relative; top:40px; left:50%; transform:translate(-50%,0);  width: 80%; position: absolute; font-size: 16px; }
+.nav a { cursor: pointer; font-weight: bold;}
+.nav .nav_left { margin-right: auto; }
+.nav .nav_right { margin-left: auto; }
+
+.nav .nav_left img { width:40px; height: 40px; }
+.nav .nav_center input[type="text"] {width: 400px; margin-right: -4px;}
+.nav .nav_center button { width: 80px; height: 32px; cursor: pointer; font-size: 16px;}
+
+.contents { display: inline-block; margin:120px 0 0; background-color: #bcbcbc; width: 100%; height: 1000px; }
+
+
