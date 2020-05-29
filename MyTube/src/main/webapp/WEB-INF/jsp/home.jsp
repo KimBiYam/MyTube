@@ -31,6 +31,25 @@
 	<div class="contents">
 		
 	</div>
-
+	<script
+	  src="https://code.jquery.com/jquery-3.5.1.js"
+	  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(".nav_search").on("click",function(){
+			const word = $(".nav_center input[type='text']").val();
+			$.ajax({
+				url : "/youtube",
+				type : "get",
+				dataType : "json",
+				data : {"search" : word},
+				success : function(data){
+					alert(JSON.stringify(data));
+					$("div.contents").html(JSON.stringify(data));
+					}
+				})
+		})
+	</script>
 </body>
 </html>
+
